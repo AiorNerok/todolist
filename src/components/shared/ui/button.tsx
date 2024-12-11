@@ -1,7 +1,5 @@
-import { PropsWithChildren } from "react"
+import { ButtonHTMLAttributes, PropsWithChildren } from "react"
 
-type ButtonProps = {
+type ButtonProps = ButtonHTMLAttributes<HTMLButtonElement> & PropsWithChildren
 
-} & PropsWithChildren
-
-export const Button = ({ children }: ButtonProps) => <button>{children}</button>
+export const Button = ({ children, ...props }: ButtonProps) => <button type="button" {...props}>{children}</button>

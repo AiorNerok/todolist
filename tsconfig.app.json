@@ -24,7 +24,11 @@
 
         "baseUrl": ".",
         "paths": {
-            "widgets/*": ["src/components/widgets/*"]
+            "widgets/*": ["src/components/widgets/*"],
+            "use-case/*": ["src/components/use-case/*"],
+            "entities/*": ["src/components/entities/*"],
+            "shared/*": ["src/components/shared/*"],
+            "hook/*": ["src/components/shared/hook/*"]
         }
     },
     "include": ["src"]
